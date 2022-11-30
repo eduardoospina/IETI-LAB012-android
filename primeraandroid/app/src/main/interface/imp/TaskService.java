@@ -1,0 +1,21 @@
+import java.util.Date;
+import java.util.List;
+
+public interface UserService
+{
+    User create( User user );
+
+    User findById( String id );
+
+    User findByEmail( String email);
+
+    List<User> getAll();
+
+    void deleteById( String id );
+
+    User update(User user, String userId );
+
+    List<User> findUsersWithNameOrLastNameLike(String textofind);
+
+    List<User> findUsersCreatedAfter(String CreatedAt);
+}
